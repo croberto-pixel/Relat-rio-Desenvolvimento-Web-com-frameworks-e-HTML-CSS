@@ -1,0 +1,26 @@
+body{
+    background-color:#f5f5f5;
+}
+
+.topo{
+    background:#ff7a00;
+    color:white;
+    padding:40px;
+    text-align:center;
+}
+
+.card-obras{
+    transition:0.3s;
+}
+
+.card-obras:hover{
+    transform:scale(1.03);
+}
+
+footer{
+    background:#212529;
+    color:white;
+    padding:20px;
+    margin-top:40px;
+    text-align:center;
+}
