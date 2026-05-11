@@ -1,0 +1,405 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sistema de Gerenciamento de Obras</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+
+    body{
+      background-color:#f5f5f5;
+    }
+
+    .topo{
+      background:#ff7a00;
+      color:white;
+      padding:40px;
+      text-align:center;
+    }
+
+    .card-obras{
+      transition:0.3s;
+    }
+
+    .card-obras:hover{
+      transform:scale(1.03);
+    }
+
+    footer{
+      background:#212529;
+      color:white;
+      padding:20px;
+      margin-top:40px;
+      text-align:center;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- TOPO -->
+  <div class="topo">
+
+    <h1>Sistema de Gerenciamento de Obras</h1>
+
+    <p>
+      Controle de obras, materiais e funcionários
+    </p>
+
+  </div>
+
+  <!-- MENU -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="container">
+
+      <a class="navbar-brand" href="#">
+        BuildControl
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#obras">Obras</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#materiais">Materiais</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#cadastro">Cadastro</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- OBRAS -->
+  <section class="container mt-5" id="obras">
+
+    <h2 class="text-center mb-4">
+      Obras cadastradas
+    </h2>
+
+    <div class="row">
+
+      <!-- CARD 1 -->
+      <div class="col-md-4 mb-4">
+
+        <div class="card shadow card-obras">
+
+          <div class="card-body">
+
+            <h4 class="card-title">
+              Residencial Primavera
+            </h4>
+
+            <p>
+              Status: Em andamento
+            </p>
+
+            <p>
+              Responsável: Carlos Silva
+            </p>
+
+            <div class="progress">
+
+              <div class="progress-bar bg-success" style="width:65%">
+                65%
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-md-4 mb-4">
+
+        <div class="card shadow card-obras">
+
+          <div class="card-body">
+
+            <h4 class="card-title">
+              Centro Comercial Alpha
+            </h4>
+
+            <p>
+              Status: Planejamento
+            </p>
+
+            <p>
+              Responsável: Mariana Souza
+            </p>
+
+            <div class="progress">
+
+              <div class="progress-bar bg-warning" style="width:20%">
+                20%
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-md-4 mb-4">
+
+        <div class="card shadow card-obras">
+
+          <div class="card-body">
+
+            <h4 class="card-title">
+              Condomínio Solar
+            </h4>
+
+            <p>
+              Status: Finalizada
+            </p>
+
+            <p>
+              Responsável: João Pedro
+            </p>
+
+            <div class="progress">
+
+              <div class="progress-bar bg-primary" style="width:100%">
+                100%
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- MATERIAIS -->
+  <section class="container mt-5" id="materiais">
+
+    <h2 class="text-center mb-4">
+      Controle de Materiais
+    </h2>
+
+    <div class="row">
+
+      <div class="col-md-3 mb-3">
+
+        <div class="card text-center shadow">
+
+          <div class="card-body">
+
+            <h5>Cimento</h5>
+
+            <p>
+              Estoque disponível
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-3 mb-3">
+
+        <div class="card text-center shadow">
+
+          <div class="card-body">
+
+            <h5>Areia</h5>
+
+            <p>
+              Estoque disponível
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-3 mb-3">
+
+        <div class="card text-center shadow">
+
+          <div class="card-body">
+
+            <h5>Tijolos</h5>
+
+            <p>
+              Estoque disponível
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-3 mb-3">
+
+        <div class="card text-center shadow">
+
+          <div class="card-body">
+
+            <h5>Ferro</h5>
+
+            <p>
+              Estoque disponível
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FORMULÁRIO -->
+  <section class="container mt-5 mb-5" id="cadastro">
+
+    <div class="card shadow">
+
+      <div class="card-body">
+
+        <h2 class="text-center mb-4">
+          Cadastro de Nova Obra
+        </h2>
+
+        <form>
+
+          <div class="row">
+
+            <div class="col-md-6 mb-3">
+
+              <label class="form-label">
+                Nome da obra
+              </label>
+
+              <input type="text" class="form-control">
+
+            </div>
+
+            <div class="col-md-6 mb-3">
+
+              <label class="form-label">
+                Responsável
+              </label>
+
+              <input type="text" class="form-control">
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-6 mb-3">
+
+              <label class="form-label">
+                Data de início
+              </label>
+
+              <input type="date" class="form-control">
+
+            </div>
+
+            <div class="col-md-6 mb-3">
+
+              <label class="form-label">
+                Status
+              </label>
+
+              <select class="form-select">
+
+                <option>Planejamento</option>
+                <option>Em andamento</option>
+                <option>Finalizada</option>
+
+              </select>
+
+            </div>
+
+          </div>
+
+          <div class="mb-3">
+
+            <label class="form-label">
+              Descrição da obra
+            </label>
+
+            <textarea class="form-control" rows="5"></textarea>
+
+          </div>
+
+          <button class="btn btn-success w-100">
+            Salvar Obra
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+
+    <h4>
+      BuildControl
+    </h4>
+
+    <p>
+      Sistema Web para Gerenciamento de Obras e Construção Civil
+    </p>
+
+    <p>
+      Campo Grande - MS
+    </p>
+
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+```
